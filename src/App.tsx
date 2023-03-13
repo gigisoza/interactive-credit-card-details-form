@@ -1,6 +1,7 @@
 import bgMobile from './images/bg-main-mobile.png';
 import bgDesktop from './images/bg-main-desktop.png';
 import logo from './images/card-logo.svg';
+import tick from './images/icon-complete.svg';
 
 function App() {
     return (
@@ -91,10 +92,24 @@ function App() {
                             </article>
                             <button type="submit" className="btn">Confirm</button>
                         </form>
+                        <ThankYou />
                     </div>
                 </div>
             </section>
         </div>
+    );
+}
+
+function ThankYou() {
+    return (
+        <>
+            <div className="flex flex-col items-center justify-center h-screen max-w-lg mx-auto">
+                <img src={tick} alt="tick" className="block mx-auto" />
+                <h1 className="text-slate-800 text-3xl my-6 uppercase text-center">Thank you!</h1>
+                <p className="text-slate-400 text-center">We've added your credit details</p>
+                <button className="btn block mx-auto mt-10 w-full">Continue</button>
+            </div>
+        </>
     );
 }
 
