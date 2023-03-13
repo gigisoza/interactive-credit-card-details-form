@@ -32,6 +32,11 @@
     top: 5.25rem;
 }
 
+form .btn {
+    background-color: hsl(278, 68%, 11%);
+    @apply py-3 px-6 rounded shadow text-white text-base tracking-wide lg:text-lg; 
+}
+
 @media (min-width: 1024px) {
     .front-card, 
     .back-card {
