@@ -10,17 +10,22 @@
 
 .front-card {
     background: url("./images/bg-card-front.png") ;
-    height: 200px;
+    position: absolute;
+    top: 180px;
+    height: 230px;
     width: 320px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    z-index: 20;
 }
 
 .back-card {
     background: url("./images/bg-card-back.png") ;
-    height: 200px;
+    position: absolute;
+    right: 20px;
+    height: 230px;
     width: 320px;
     background-size: cover;
     background-position: center;
@@ -29,7 +34,11 @@
 }
 
 .back-card p {
-    top: 5.25rem;
+    top: 6.15rem;
+}
+
+form {
+    margin-top: 350px;
 }
 
 .btn {
@@ -40,12 +49,25 @@
 @media (min-width: 1024px) {
     .front-card, 
     .back-card {
+        position: relative;
         height: 300px;
         width: 500px;
         border-radius: 20px;
     }
 
+    .front-card {
+        top: 50px;
+    }
+
+    .back-card {
+        right: 0;
+    }
+
     .back-card p {
         top: 8.3rem;
+    }
+
+    form {
+        margin-top: 0;
     }
 }
